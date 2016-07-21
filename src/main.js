@@ -27,8 +27,9 @@ $(document).ready(function() {
   $('#canvas').on('click', '#twoxtwo', function() {
     $(this).css('background-color', brush);
   });
-  $('button').on('click', function() {
-    $('#color').css('background-color', 'white');
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+    $('#twoxtwo').css('background-color', 'white');
   });
 
   var isDown = false;
