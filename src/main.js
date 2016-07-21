@@ -27,10 +27,10 @@ $(document).ready(function() {
   $('#canvas').on('click', '#twoxtwo', function() {
     $(this).css('background-color', brush);
   });
-  $('form').on('submit', '#twoxtwo', function(event) {
-    event.preventDefault();
-    $(this).css('background-color', 'white');
-  });
+  // $('form').on('submit', '#twoxtwo', function(event) {
+  //   event.preventDefault();
+  //   $(this).css('background-color', 'white');
+  // });
 
   var isDown = false;
 
