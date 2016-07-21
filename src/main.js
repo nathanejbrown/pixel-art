@@ -30,4 +30,19 @@ $(document).ready(function() {
   $('button').on('click', function() {
     $('#color').css('background-color', 'white');
   });
+
+  var isDown = false;
+
+   $('#canvas > div').mousedown(function() {
+      isDown = true;
+    })
+   $('#canvas > div').mouseup(function() {
+      isDown = false;
+    });
+
+   $("#canvas > div").mouseover(function() {
+     if(isDown) {
+        $(this).css('background-color', brush);
+     }
+    });
 });
